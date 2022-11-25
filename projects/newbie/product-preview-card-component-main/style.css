@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  display: flex;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img__desktop{
+  display: none;
+}
+
+.img__mobile{
+  width: 100%;
+  height: 40%;
+  border-radius: 10px 10px 0 0;
+}
+
+main{
+  width: 100%;
+  max-width: 375px;
+  display:flex;
+  flex-direction: column;
+}
+
+.card__content{
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.card__content__type{
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Fraunces', serif;
+}
+
+h1{
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 21%, 14%);
+}
+
+p{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 25px;
+  color: hsl(228, 12%, 48%);
+}
+
+.card__content__prices{
+  display: flex;
+  gap : 20px;
+}
+
+.card__prices__current{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+}
+
+.card__prices__old{
+  text-decoration: line-through;
+}
+
+button{
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: hsl(159, 35%, 27%);
+}
+
+.button__icon{
+  border-radius: 0;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+@media screen and (min-width: 768px){
+  .img__mobile{
+    display: none;
+  }
+  .img__desktop{
+    display: block;
+    border-radius: 10px 0 0 10px;
+    width: 270px;
+  }
+  main{
+    flex-direction: row;
+    height: 420px;
+    max-width: 540px;
+  }
+  .card__content{
+    border-radius: 0 10px 10px 0;
+    width: 270px;
+  }
+}
+
