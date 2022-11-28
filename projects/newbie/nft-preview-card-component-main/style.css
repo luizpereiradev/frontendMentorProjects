@@ -17,7 +17,8 @@ body{
 
 main{
   background-color: hsl(216, 50%, 16%);
-  width: 337px;
+  max-width: 337px;
+  width: 100%;
   /* height: 610px; */
   border-radius: 10px;
   padding: 20px;
@@ -29,6 +30,7 @@ main{
 .imgContainer{
   width: 100%;
   height: 50%;
+  position: relative;
 }
 
 .imgContainer:hover .view{
@@ -37,11 +39,10 @@ main{
 }
 
 .view{
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background-color: hsla(178, 100%, 50%, 0.587);
   position: absolute;
-  display: grid;
   place-items: center;
   display: none;
   border-radius: 10px;
@@ -55,6 +56,7 @@ main{
 
 .mainImage{
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -72,7 +74,6 @@ h1:hover{
 p{
   font-size: 18px;
 }
-
 
 .infos{
   display: flex;

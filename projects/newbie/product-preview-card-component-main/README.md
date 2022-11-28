@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site URL](https://luizpereiradev.github.io/frontendMentorProjects/project-newbie-1-previewCardComponent/projects/newbie/product-preview-card-component-main/index.html)
+- [Live site URL](https://luizpereiradev.github.io/frontendMentorProjects/projects/newbie/product-preview-card-component-main/index.html)
 
 ### Built with
 
