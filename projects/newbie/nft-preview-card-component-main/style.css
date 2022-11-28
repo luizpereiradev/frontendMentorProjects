@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+}
+
+main{
+  background-color: hsl(216, 50%, 16%);
+  width: 337px;
+  /* height: 610px; */
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.imgContainer{
+  width: 100%;
+  height: 50%;
+}
+
+.imgContainer:hover .view{
+  display: grid;
+  cursor: pointer;
+}
+
+.view{
+  width: 300px;
+  height: 300px;
+  background-color: hsla(178, 100%, 50%, 0.587);
+  position: absolute;
+  display: grid;
+  place-items: center;
+  display: none;
+  border-radius: 10px;
+}
+
+.view-icon{
+  width: 60px;
+  height: 60px;
+}
+
+
+.mainImage{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h1{
+  color: white;
+  font-size: 27px;
+}
+
+h1:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p{
+  font-size: 18px;
+}
+
+
+.infos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.infos div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.price{
+  color: hsl(178, 100%, 50%);
+}
+
+.ownerContainer{
+  border-top: 1px solid hsl(0, 0%, 75%);
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  color:hsl(215, 51%, 70%);
+}
+
+.avatar{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 15px;
+}
+
+span{
+  color: white;
+  margin-left: 4px;
+  font-weight: 400;
+}
+
+span:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
